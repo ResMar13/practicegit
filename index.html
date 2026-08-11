@@ -4,12 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Git</title>
 </head>
 
 <body>
     <h1>This is an HTML page</h1>
     <h2>First Subtitle</h2>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="img/Garoh.webp" alt="">
+            </div>
+            <div class="flip-card-back">
+                <img src="img/Saitama.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('is-flipped');
+            });
+        });
+    </script>
 </body>
 
 </html>
